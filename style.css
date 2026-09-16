@@ -42,11 +42,31 @@ nav{
     margin-bottom: 30px;
     
 }
-nav .circle{
+nav .circle1{
     border-radius: 50%;
     background-color: rgba(0, 238, 255, 0.384);
     width: 40px;
     height: 40px;
     line-height: 40px;
+
+}
+nav .circle2{
+    border-radius: 50%;
+    background-color: rgba(0, 238, 255, 0.384);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+}
+nav .circle1:hover{
+    cursor: pointer;
+     transform: translate(4px ); 
+     transition: 0.3s;
+
+}
+nav .circle2:hover{
+    cursor: pointer;
+     transform: translate(4px ); 
+     transition: 0.3s;
 
 }
