@@ -1,112 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins',sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
 .hero-banner {
-    background-image: url('./media/back.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+  background-image: url("./media/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.music-player{
-    height: 70vh;
-     /* background-color: rgba(2, 13, 26, 0.5); 
+.music-player {
+  height: 70vh;
+  /* background-color: rgba(2, 13, 26, 0.5); 
       backdrop-filter: blur(8px);
        -webkit-backdrop-filter: blur(8px);
         border: 1px solid rgba(0, 229, 255, 0.3); */
-         background-color: rgba(2, 13, 26, 0.15); 
-    
-    border: 1px solid rgba(0, 229, 255, 0.3); 
-    backdrop-filter: blur(8px); 
-    -webkit-backdrop-filter: blur(8px); 
+  background-color: rgba(2, 13, 26, 0.15);
 
-    width: 400px;
-    padding: 25px 35px;
-    text-align: center;
-   
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 
+  width: 400px;
+  padding: 25px 35px;
+  text-align: center;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-nav .circle1{
-    border-radius: 50%;
-    background-color: rgba(0, 238, 255, 0.384);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    box-shadow: 0 5px 10px rgba(26, 41, 255, 0.22);
-
+nav .circle1 {
+  border-radius: 50%;
+  background-color: rgba(0, 238, 255, 0.384);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 5px 10px rgba(26, 41, 255, 0.22);
 }
-nav .circle2{
-    border-radius: 50%;
-    background-color: rgba(0, 238, 255, 0.384);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-     box-shadow: 0 5px 10px rgba(26, 41, 255, 0.22);
-
+nav .circle2 {
+  border-radius: 50%;
+  background-color: rgba(0, 238, 255, 0.384);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 5px 10px rgba(26, 41, 255, 0.22);
 }
-nav .circle1:hover{
-    cursor: pointer;
-     transform: translate(4px ); 
-     transition: 0.3s;
-
+nav .circle1:hover {
+  cursor: pointer;
+  transform: translate(4px);
+  transition: 0.3s;
 }
-nav .circle2:hover{
-    cursor: pointer;
-     transform: translate(4px ); 
-     transition: 0.3s;
-
+nav .circle2:hover {
+  cursor: pointer;
+  transform: translate(4px);
+  transition: 0.3s;
 }
 
-.song-img{
-    width: 200px;
-    border-radius: 50%;
-    border: 3px solid black;
-    box-shadow: 0 10px 60px rgba(26, 41, 255, 0.22);
+.song-img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+  box-shadow: 0 10px 60px rgba(26, 41, 255, 0.22);
 }
-.music-player h1{
-    font-size: 20px;
-    font-weight: 400;
-    color: rgb(79, 248, 248);
-    margin-top: 20px;
+.music-player h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(79, 248, 248);
+  margin-top: 20px;
 }
-.music-player p{
-    font-size: 14px;
-    color: rgb(79, 248, 248);
+.music-player p {
+  font-size: 14px;
+  color: rgb(79, 248, 248);
 }
-#progress{
-    -webkit-appearance:none;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color:  rgba(9, 247, 247, 0.966);
-    cursor: pointer;
-    margin: 40px 0;
-
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(9, 247, 247, 0.966);
+  cursor: pointer;
+  margin: 40px 0;
 }
-#progress::-webkit-slider-thumb{
-    -webkit-appearance:none;
-    width: 30px;
-    height: 30px;
-    background-color: rgba(9, 247, 247, 0.966);
-    border-radius: 50%;
-    border: 6px solid black;
-    box-shadow: 0 5px 5px rgba(0, 238, 255, 0.384);
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(9, 247, 247, 0.966);
+  border-radius: 50%;
+  border: 6px solid black;
+  box-shadow: 0 5px 5px rgba(0, 238, 255, 0.384);
 }
