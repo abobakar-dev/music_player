@@ -129,3 +129,7 @@ nav .circle2:hover {
 .controls div:hover{
     background-color: black;
 }
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background-color: black;
+}
