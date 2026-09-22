@@ -29,17 +29,18 @@
             <h1>Argentina</h1>
             <p>Dua Lipa & Sean Paul</p>
 
-            <audio>
+            <audio  id="song">
                 <source src="./media/Dua Lipa & Sean Paul - Brazil! Argentina! (Live) FIFA World Cup Anthem 2026 _ National Tune X _ 8K_720p.mp3" type="audio/mpeg">
             </audio >
             <input type="range" value="0" id="progress">
             <div class="controls">
                 <div> <i class="fa-solid fa-backward" style="color: rgb(79, 248, 248);"></i></div>
-                <div> <i class="fa-solid fa-play" style="color: rgb(79, 248, 248);" ></i></div>
+                <div onclick="playPause()"> <i class="fa-solid fa-play" style="color: rgb(79, 248, 248);" id="ctrlIcon" ></i></div>
                 <div> <i class="fa-solid fa-forward" style="color: rgb(79, 248, 248);"></i></div>
             </div>
 
         </div>
     </div>
+    <script src="style.css"></script>
 </body>
 </html>
