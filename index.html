@@ -1,46 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <script src="https://kit.fontawesome.com/b60e4f8525.js" crossorigin="anonymous"></script>
-</head>
-<body class="hero-banner">
+    <script
+      src="https://kit.fontawesome.com/b60e4f8525.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="hero-banner">
     <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle1">
-                    <i class="fa-solid fa-angle-left" style="color: rgb(79, 248, 248);"></i>
+      <div class="music-player">
+        <nav>
+          <div class="circle1">
+            <i
+              class="fa-solid fa-angle-left"
+              style="color: rgb(79, 248, 248)"
+            ></i>
+          </div>
 
-                </div>
+          <div class="circle2">
+            <i class="fa-solid fa-bars" style="color: rgb(79, 248, 248)"></i>
+          </div>
+        </nav>
+        <img src="./media/images.jpg" alt="" class="song-img" />
+        <h1>Argentina</h1>
+        <p>Dua Lipa & Sean Paul</p>
 
-                <div class="circle2">
-                    <i class="fa-solid fa-bars" style="color: rgb(79, 248, 248);"></i>
-
-                </div>
-            </nav>
-            <img src="./media/images.jpg" alt="" class="song-img">
-            <h1>Argentina</h1>
-            <p>Dua Lipa & Sean Paul</p>
-
-            <audio  id="song">
-                <source src="./media/Dua Lipa & Sean Paul - Brazil! Argentina! (Live) FIFA World Cup Anthem 2026 _ National Tune X _ 8K_720p.mp3" type="audio/mpeg">
-            </audio >
-            <input type="range" value="0" id="progress">
-            <div class="controls">
-                <div> <i class="fa-solid fa-backward" style="color: rgb(79, 248, 248);"></i></div>
-                <div onclick="playPause()"> <i class="fa-solid fa-play" style="color: rgb(79, 248, 248);" id="ctrlIcon" ></i></div>
-                <div> <i class="fa-solid fa-forward" style="color: rgb(79, 248, 248);"></i></div>
-            </div>
-
+        <audio id="song">
+          <source
+            src="./media/Dua Lipa & Sean Paul - Brazil! Argentina! (Live) FIFA World Cup Anthem 2026 _ National Tune X _ 8K_720p.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div>
+            <i
+              class="fa-solid fa-backward"
+              style="color: rgb(79, 248, 248)"
+            ></i>
+          </div>
+          <div onclick="playPause()">
+            <i
+              class="fa-solid fa-play"
+              style="color: rgb(79, 248, 248)"
+              id="ctrlIcon"
+            ></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-forward" style="color: rgb(79, 248, 248)"></i>
+          </div>
         </div>
+      </div>
     </div>
-    <script src="style.css"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
