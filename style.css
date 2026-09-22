@@ -20,10 +20,6 @@
 }
 .music-player {
   height: 90vh;
-  /* background-color: rgba(2, 13, 26, 0.5); 
-      backdrop-filter: blur(8px);
-       -webkit-backdrop-filter: blur(8px);
-        border: 1px solid rgba(0, 229, 255, 0.3); */
   background-color: rgba(2, 13, 26, 0.15);
 
   border: 1px solid rgba(0, 229, 255, 0.3);
