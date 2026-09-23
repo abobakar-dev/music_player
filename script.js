@@ -1,21 +1,44 @@
-let song = document.getElementById("song");
-let progress = document.getElementById("progress");
-let ctrlIcon = document.getElementById("ctrlIcon");
+const song = document.getElementById("song");
+const progress = document.getElementById("progress");
+const ctrlIcon = document.getElementById("ctrlIcon");
 
-song.onloadedmetadata = function(){
-    progress.max = song.duration;
-    progress.value = song.currentTime;
+function updatePlayButton(isPlaying) {
+  ctrlIcon.classList.remove("fa-play", "fa-pause");
+  ctrlIcon.classList.add(isPlaying ? "fa-pause" : "fa-play");
 }
 
-function playPause(){
-     if(ctrlIcon.classList.contains("fa-pause")){
-        song.pause();
-        ctrlIcon.classList.remove("fa-pause");
-        ctrlIcon.classList.add("fa-play");
-     }
-     else{
-        song.play();
-        ctrlIcon.classList.add("fa-pause");
-        ctrlIcon.classList.remove("fa-play");
-     }
+song.onloadedmetadata = function () {
+  progress.max = song.duration;
+  progress.value = song.currentTime;
+};
+
+song.onplay = function () {
+  updatePlayButton(true);
+};
+
+song.onpause = function () {
+  updatePlayButton(false);
+};
+
+function playPause() {
+  if (song.paused) {
+    song.play().catch(() => {
+      // Ignore autoplay restrictions if the browser blocks playback.
+    });
+  } else {
+    song.pause();
+  }
 }
+
+song.addEventListener("timeupdate", function () {
+  progress.value = song.currentTime;
+});
+
+progress.onchange = function () {
+  song.currentTime = progress.value;
+};
+
+song.addEventListener("ended", function () {
+  updatePlayButton(false);
+  progress.value = 0;
+});
